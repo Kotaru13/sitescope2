@@ -1,0 +1,25 @@
+{
+  "env": {
+    "python": "3.12.3",
+    "platform": "Linux-6.18.44-fc-v310-x86_64-with-glibc2.39",
+    "repeats": 7,
+    "seed": 42
+  },
+  "prep": [
+    {
+      "N": 1000,
+      "sort_us": 187.2,
+      "dict_build_us": 83.6
+    },
+    {
+      "N": 10000,
+      "sort_us": 4330.7,
+      "dict_build_us": 934.5
+    },
+    {
+      "N": 100000,
+      "sort_us": 102316.9,
+      "dict_build_us": 34924.6
+    }
+  ]
+}
