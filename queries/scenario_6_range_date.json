@@ -1,0 +1,1 @@
+{"size":5,"query":{"range":{"published_at":{"gte":"2025-04-01","lte":"2025-06-30"}}},"sort":[{"published_at":"asc"}]}
