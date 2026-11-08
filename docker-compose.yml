@@ -1,0 +1,11 @@
+# ЛОКАЛЬНЫЙ одноузловой Elasticsearch БЕЗ аутентификации (только для учебной работы).
+# Порт привязан к 127.0.0.1 — наружу сервис не виден.
+services:
+  es:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.15.0
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - ES_JAVA_OPTS=-Xms1g -Xmx1g
+    ports:
+      - "127.0.0.1:9200:9200"
